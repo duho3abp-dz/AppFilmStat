@@ -40,12 +40,6 @@ const personalMovieDB = {
     },
     writeYourGenres: function () {
         for (let i = 1; i < 2; i++) {
-            // let genre = prompt(`Ваш любимый жанр по номером ${i}`, '');
-            // if (genre != "" && genre != null) {
-            //     personalMovieDB.genres[i - 1] = genre;
-            // } else {
-            //     i--;
-            // }
 
             let genre = prompt(`Напишите Ваши любимые жанры через запятую и пробел`, '').toLowerCase();
             if (genre === "" || genre == null) {
@@ -73,8 +67,8 @@ const personalMovieDB = {
     }
 };
 
-// personalMovieDB.start();
-// personalMovieDB.rememberMyFilms();
-// personalMovieDB.writeYourGenres();
-// personalMovieDB.toggleVisibleMyDB();
-// personalMovieDB.showMyDB(personalMovieDB.privat);
+personalMovieDB.start();
+personalMovieDB.rememberMyFilms();
+personalMovieDB.writeYourGenres();
+personalMovieDB.toggleVisibleMyDB();
+personalMovieDB.showMyDB(personalMovieDB.privat);
